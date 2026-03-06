@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <title>Final Portfolio</title>
+</head>
+
+<body class=" bg-slate-200">
+    <div>
+        <!-- Home -->
+        <div id="home" class=" bg-[url('background2.jpg')] bg-cover bg-center w-full h-[100vh]">
+            <div class="fixed top-0 left-0 z-50  w-full">
+                <nav class="bg-red-500/70 w-full h-[9vh] pb-7 flex justify-around pt-5">
+                    <div class="flex gap-80 ">
+                        <div class="">
+                            <h1 class="text-3xl font-bold text-red-500 "><i class="fa-solid fa-feather"></i>L E A N</h1>
+                        </div>
+                        <div>
+                            <ul class="text-2xl text-white font-semibold flex gap-20">
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#about">About me</a></li>
+                                <li><a href="#services">Services</a></li>
+                                <li><a href="#portfolio">Projects</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <button class="text-white text-3xl"><i class="fa-solid fa-bars "></i></button>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="flex justify-around">
+                <div class="flex gap-[10vw]">
+                    <div class="pr-[35vw]  relative">
+                        <img class="h-[100vh] w-[35vw] rounded-b-lg" src="me.png" alt="">
+                    </div>
+                    <div class="mt-[43vh] pl-[38vw] pt-30 absolute">
+                        <div class="flex border-b-3 w-61 py-3 border-white">
+                            <h1 class="font-semibold text-6xl text-white">I'm</h1>
+                            <h1 class="font-extrabold text-6xl pl-5 text-red-500">Lean</h1>
+                        </div>
+                        <div class="w-[30vw] h-20 flex  ">
+                            <h1 id="typewriter" class="text-6xl font-bold border-b-3 w-auto text-white"></h1>
+                        </div>
+                        <a href="#contact"
+                            class="text-white font-semibold text-4xl mt-6 bg-red-500 py-5 px-5 rounded-full hover:bg-red-600 hover:text-black inline-block">
+                            Get in touch <i class="fa-solid fa-arrow-pointer text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- About Me -->
+        <div id="about" class=" pb-30">
+            <div class="flex justify-center pt-[15vh]">
+                <div class="flex flex-col items-center">
+                    <h1 class=" text-5xl font-bold">About Me</h1>
+                    <div class="mt-5 ">
+                        <p class="text-2xl text-red-500 font-medium">A student developer of East Watch Services in
+                            Philippines</p>
+                    </div>
+                    <div class="mt-7">
+                        <p class="text-2xl font-semibold">
+                            I am a <strong class="border-b-3 text-red-500 border-red-500">hardworking and adaptable
+                                individual</strong> who is passionate about learning <br> and growing in the world of
+                            technology.I strive to give my best in every task I take on, <br>
+                            always maintaining dedication, discipline, and attention to detail. <br><br>
+
+                            I easily adapt to different environments and challenges, allowing me to work <br>
+                            effectively both independently and with a team. My goal is to continuously <br>
+                            improve my skills while creating meaningful work that contributes to <br>
+                            successful projects and positive experiences. <br>
+                        </p>
+                    </div>
+                    <div class="flex gap-7 mt-13 mb-3">
+                        <div>
+                            <div class="flex">
+                                <h1 class="font-bold text-2xl  ">Birthday </h1>
+                                <h1 class="font-ligth text-2xl text-gray-700 pl-5"> / 29th November 2005</h1>
+                            </div>
+                            <div class="mt-3 flex">
+                                <h1 class="font-bold text-2xl  ">Age </h1>
+                                <h1 class="font-ligth text-2xl text-gray-700 pl-5"> / 20 years old</h1>
+                            </div>
+                            <div class="mt-3 flex">
+                                <h1 class="font-bold text-2xl  ">Residence </h1>
+                                <h1 class="font-ligth text-2xl text-gray-700 pl-5"> / Philippines</h1>
+                            </div>
+                            <div class="mt-3 flex">
+                                <h1 class="font-bold text-2xl  ">Address </h1>
+                                <h1 class="font-ligth text-2xl text-gray-700 pl-5"> / Maragusan DDO</h1>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex">
+                                <h1 class="font-bold text-2xl  ">Email </h1>
+                                <h1 class="font-ligth text-2xl text-gray-700 pl-5"> / LeancamanaVelasco29@gmail.com</h1>
+                            </div>
+                            <div class="mt-3 flex">
+                                <h1 class="font-bold text-2xl ">Phone </h1>
+                                <h1 class="font-ligth text-2xl text-gray-700 pl-5"> / 0955-795-8171</h1>
+                            </div>
+                            <div class="mt-3 flex">
+                                <h1 class="font-bold text-2xl  ">Facebook </h1>
+                                <h1 class="font-ligth text-2xl text-gray-700 pl-5"> / Lean Dzeyron Velasco</h1>
+                            </div>
+                            <div class="mt-3 flex">
+                                <h1 class="font-bold text-2xl  ">Freelance </h1>
+                                <h1 class="font-ligth text-2xl text-gray-700 pl-5"> / Available</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute pl-[20vh] mt-8">
+                <div class="flex justify-center gap-[2vw] w-[80vw] bg-gray-100 py-10 px-7 rounded-lg">
+                    <div class="flex gap-[5vw]">
+                        <div class="flex">
+                            <div>
+                                <i class="fa-regular fa-heart text-7xl text-red-500"></i>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <h1 class="text-black text-4xl font-bold">0</h1>
+                                <h1 class="text-black text-2xl font-ligth">Happy Clients</h1>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div>
+                                <i class="fa-solid fa-check text-7xl text-red-500"></i>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <h1 class="text-black text-4xl font-bold">0</h1>
+                                <h1 class="text-black text-2xl font-ligth">Completed Projects</h1>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div>
+                                <i class="fa-regular fa-camera text-7xl text-red-500"></i>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <h1 class="text-black text-4xl font-bold">850</h1>
+                                <h1 class="text-black text-2xl font-ligth">Photos Captured</h1>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div>
+                                <i class="fa-solid fa-microphone text-7xl text-red-500"></i>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <h1 class="text-black text-4xl font-bold">0</h1>
+                                <h1 class="text-black text-2xl font-ligth">Happy Clients</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-gray-50 h-[50vh]">
+            <div class="flex  flex justify-center gap-[10vw]">
+                <div class="pt-40">
+                    <p class="text-3xl">
+                        I <strong class=" text-red-500">design and develop services</strong> for customers <br>
+                        of all sizes, specializing in creating stylish, <br>
+                        modern websites, web services and online <br>
+                        stores. My passion is to <strong class="text-red-500">design digital user <br>
+                            experiences</strong> through the bold interface and <br>
+                        meaningful interactions.
+                    </p>
+                </div>
+                <div>
+                    <div class="relative pt-30 w-[50vh]">
+                        <!-- Text above the bar -->
+                        <div class="flex justify-between mb-1">
+                            <span class="text-gray-700 font-semibold">TailwindCSS</span>
+                            <span class="text-gray-700 font-semibold">85%</span>
+                        </div>
+                        <!-- Progress bar -->
+                        <div class="h-5 rounded-full overflow-hidden bg-gray-300">
+                            <div class="h-full rounded-full bg-red-500" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="relative pt-7 w-[50vh]">
+                        <!-- Text above the bar -->
+                        <div class="flex justify-between mb-1">
+                            <span class="text-gray-700 font-semibold">VanillaCSS</span>
+                            <span class="text-gray-700 font-semibold">70%</span>
+                        </div>
+                        <!-- Progress bar -->
+                        <div class="h-5 rounded-full overflow-hidden bg-gray-300">
+                            <div class="h-full rounded-full bg-red-500" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                    <div class="relative pt-7 w-[50vh]">
+                        <!-- Text above the bar -->
+                        <div class="flex justify-between mb-1">
+                            <span class="text-gray-700 font-semibold">Vue</span>
+                            <span class="text-gray-700 font-semibold">80%</span>
+                        </div>
+                        <!-- Progress bar -->
+                        <div class="h-5 rounded-full overflow-hidden bg-gray-300">
+                            <div class="h-full rounded-full bg-red-500" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="relative pt-7 w-[50vh]">
+                        <!-- Text above the bar -->
+                        <div class="flex justify-between mb-1">
+                            <span class="text-gray-700 font-semibold">Bootstrap</span>
+                            <span class="text-gray-700 font-semibold">60%</span>
+                        </div>
+                        <!-- Progress bar -->
+                        <div class="h-5 rounded-full overflow-hidden bg-gray-300">
+                            <div class="h-full rounded-full bg-red-500" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Services -->
+        <div id="services" class=" mt-[10vh] flex flex-col items-center ">
+            <div></div>
+            <div class="flex justify-center">
+                <div class="border-b-3 border-red-500 w-61 mt-6 pb-7">
+                    <h1 class="font-bold text-5xl">What I Do</h1>
+                </div>
+            </div>
+            <div class="flex mt-10  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                <div class=" bg-gray-50 rounded-lg shadow w-[20vw] h-auto">
+                    <div class="flex flex-col items-center text-center mt-[5vh] py-7 px-7">
+                        <div>
+                            <img class="h-[14vh] w-[10vw]" src="Svg.svg" alt="">
+                        </div>
+                        <div class="border-b-3 border-red-500 w-61 mt-6 pb-7">
+                            <h1 class="font-bold text-3xl">Unique Design</h1>
+                        </div>
+                        <div class="mt-5">
+                            <p class="font-bold text-1xl">
+                                I design and develop services for <br>
+                                customers of all sizes, specializing in <br>
+                                creating stylish, modern websites.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" bg-gray-50 rounded-lg shadow w-[20vw] h-auto">
+                    <div class="flex flex-col items-center text-center mt-[5vh] py-7 px-7">
+                        <div>
+                            <img class="h-auto w-[10vw]" src="svg2.svg" alt="">
+                        </div>
+                        <div class="border-b-3 border-red-500 w-61 mt-6 pb-7">
+                            <h1 class="font-bold text-3xl">Different Layout</h1>
+                        </div>
+                        <div class="mt-5">
+                            <p class="font-bold text-1xl">
+                                I design and develop services for <br>
+                                customers of all sizes, specializing in <br>
+                                creating stylish, modern websites.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" bg-gray-50 rounded-lg shadow w-[20vw] h-auto">
+                    <div class="flex flex-col items-center text-center mt-[5vh] py-7 px-7">
+                        <div>
+                            <img class="h-[14vh] w-[10vw]" src="svg3.svg" alt="">
+                        </div>
+                        <div class="border-b-3 border-red-500 w-61 mt-6 pb-7">
+                            <h1 class="font-bold text-3xl">Make it Simple</h1>
+                        </div>
+                        <div class="mt-5">
+                            <p class="font-bold text-1xl">
+                                I design and develop services for <br>
+                                customers of all sizes, specializing in <br>
+                                creating stylish, modern websites.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" bg-gray-50 rounded-lg shadow w-[20vw] h-auto">
+                    <div class="flex flex-col items-center text-center mt-[5vh] py-7 px-7">
+                        <div>
+                            <img class="h-auto w-[10vw]" src="svg4.svg" alt="">
+                        </div>
+                        <div class="border-b-3 border-red-500 w-61 mt-6 pb-7">
+                            <h1 class="font-bold text-3xl">Responsiveness</h1>
+                        </div>
+                        <div class="mt-5">
+                            <p class="font-bold text-1xl">
+                                I design and develop services for <br>
+                                customers of all sizes, specializing in <br>
+                                creating stylish, modern websites.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" bg-gray-50 rounded-lg shadow w-[20vw] h-auto">
+                    <div class="flex flex-col items-center text-center py-7 px-7">
+                        <div>
+                            <img class="h-[17vh] w-[10vw]" src="svg5.svg" alt="">
+                        </div>
+                        <div class="border-b-3 border-red-500 w-61 mt-6 pb-7">
+                            <h1 class="font-bold text-3xl">testing for Perfection</h1>
+                        </div>
+                        <div class="mt-5">
+                            <p class="font-bold text-1xl">
+                                I design and develop services for <br>
+                                customers of all sizes, specializing in <br>
+                                creating stylish, modern websites.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" bg-gray-50 rounded-lg shadow w-[20vw] h-auto">
+                    <div class="flex flex-col items-center text-center mt-[5vh] py-7 px-7">
+                        <div>
+                            <img class="h-[12vh] w-[10vw]" src="svg6.svg" alt="">
+                        </div>
+                        <div class="border-b-3 border-red-500 w-61 mt-6 pb-7">
+                            <h1 class="font-bold text-3xl">Advance Option</h1>
+                        </div>
+                        <div class="mt-5">
+                            <p class="font-bold text-1xl">
+                                I design and develop services for <br>
+                                customers of all sizes, specializing in <br>
+                                creating stylish, modern websites.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Portfolio -->
+        <div id="portfolio" class="bg-gray-300 flex flex-col items-center mt-[10vh] pb-[10vh] h-auto w-full">
+            <div class="flex justify-center">
+                <div class="flex justify-center border-b-3 border-red-500 w-61 mt-6 pb-7">
+                    <h1 class="font-bold text-5xl">Portfolio</h1>
+                </div>
+            </div>
+            <div class="mt-5">
+                <div>
+                    <h1 class="text-center text-2xl">I design and develop services for customers of all sizes,
+                        specializing <br>
+                        in creating stylish, modern websites</h1>
+                </div>
+            </div>
+
+            <div class="flex grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-10">
+                <div class="bg-red-300 h-[50vh] w-[24vw] rounded-lg">
+                    <div class="flex justify-center">
+                        <a href="http://127.0.0.1:5501/Abas-concept.html/Web.html"><img
+                                class="portfolio-img mt-10 h-[30vh] rounded-lg w-[20vw]" src="netflix.jpeg"></a>
+                    </div>
+                </div>
+                <div class="bg-red-300 h-[50vh] w-[24vw] rounded-lg">
+                    <div class="flex justify-center">
+                        <a href="http://127.0.0.1:5501/Abas-concept.html/Phos.html"><img
+                                class="mt-10 h-[30vh] rounded-lg w-[20vw]" src="phos.jpeg" alt=""></a>
+                    </div>
+                </div>
+                <div class="bg-red-300 h-[50vh] w-[24vw] rounded-lg">
+                    <div class="flex justify-center">
+                        <a href="http://127.0.0.1:5501/Final_porfolio/Ecommerce-Exam.html"><img
+                                class="mt-10 h-[30vh] rounded-lg w-[20vw]" src="ecom.jpeg" alt=""></a>
+                    </div>
+                </div>
+                <div class="bg-red-300 h-[50vh] w-[24vw] rounded-lg">
+                    <div class="flex justify-center">
+                        <a href="http://127.0.0.1:5501/DOM-OP.HTML/DOMjollibee.html"><img
+                                class="mt-10 h-[30vh] rounded-lg w-[20vw]" src="jubillie.jpeg" alt=""></a>
+                    </div>
+                </div>
+                <div class="bg-red-300 h-[50vh] w-[24vw] rounded-lg">
+                    <div class="flex justify-center">
+                        <a href="http://127.0.0.1:5501/DOM-OP.HTML/TICTACTOE2.HTML"><img
+                                class="mt-10 h-[30vh] rounded-lg w-[20vw]" src="tikitiki.jpeg" alt=""></a>
+                    </div>
+                </div>
+                <div class="bg-red-300 h-[50vh] w-[24vw] rounded-lg">
+                    <div class="flex justify-center">
+                        <a href="http://127.0.0.1:5501/VUE/vue2.html"><img class="mt-10 h-[30vh] rounded-lg w-[20vw]"
+                                src="input.jpeg" alt=""></a>
+                    </div>
+                </div>
+                <div class="bg-red-300 h-[50vh] w-[24vw] rounded-lg">
+                    <div class="flex justify-center">
+                        <a href="http://127.0.0.1:5501/UpWork.com/FloorLife.Html"><img
+                                class="mt-10 h-[30vh] rounded-lg w-[20vw]" src="floorlife.jpeg" alt=""></a>
+                    </div>
+                </div>
+                <div class="bg-red-300 h-[50vh] w-[24vw] rounded-lg">
+                    <div class="flex justify-center">
+                        <a href="http://127.0.0.1:5501/DOM-OP.HTML/Calculator.Html"><img
+                                class="mt-10 h-[30vh] rounded-lg w-[20vw]" src="calcal.jpeg" alt=""></a>
+                    </div>
+                </div>
+                <div class="bg-red-300 h-[50vh] w-[24vw] rounded-lg">
+                    <div class="flex justify-center">
+                        <a href="http://127.0.0.1:5501/VUE/Perfections/index.html"><img
+                                class="mt-10 h-[30vh] rounded-lg w-[20vw]" src="kopiko.jpeg" alt=""></a>
+                    </div>
+                </div>
+                <div class="bg-red-300 h-[50vh] w-[24vw] rounded-lg">
+                    <div class="flex justify-center">
+                        <a href="https://evans-bridal-4g1mdzwrm-leanvelasco1996s-projects.vercel.app/"><img
+                                class="mt-10 h-[30vh] rounded-lg w-[20vw]" src="best.jpeg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact -->
+        <div id="contact" class="flex justify-center mt-10">
+
+            <!-- LEFT CONTACT INFO -->
+            <div class="bg-red-300 py-10 px-10 rounded-bl-lg rounded-tl-lg">
+                <div>
+                    <h1 class="font-bold text-3xl">Email :</h1>
+                    <p class="font-semibold text-2xl mt-1">
+                        LeancamanaVelasco29@gmail.com
+                    </p>
+                </div>
+
+                <div class="mt-3">
+                    <h1 class="font-bold text-3xl">Visit my Studio :</h1>
+                    <p class="font-semibold text-2xl mt-1">
+                        Prk. Buyo Poblacion, <br>
+                        Maragusan, Davao De Oro
+                    </p>
+                </div>
+
+                <div class="mt-3">
+                    <h1 class="font-bold text-3xl">Phone :</h1>
+                    <p class="font-semibold text-2xl mt-1">
+                        +631234567890 <br>
+                        +630987654321
+                    </p>
+                </div>
+            </div>
+
+            <!-- RIGHT CONTACT FORM -->
+            <div class="bg-gray-100 w-[40vw] p-10 rounded-br-lg rounded-tr-lg">
+
+                <form class="flex flex-col gap-5">
+
+                    <div class="flex gap-5">
+                        <input class="w-full py-4 px-4 bg-white border rounded-lg" type="text" placeholder="First Name">
+
+                        <input class="w-full py-4 px-4 bg-white border rounded-lg" type="text" placeholder="Last Name">
+                    </div>
+
+                    <input class="w-full py-4 px-4 bg-white border rounded-lg" type="email" placeholder="Email Address">
+
+                    <input class="w-full py-4 px-4 bg-white border rounded-lg" type="tel" placeholder="Phone Number">
+
+                    <textarea class="w-full py-4 px-4 bg-white border rounded-lg h-40"
+                        placeholder="Your Message"></textarea>
+
+                    <button class="bg-red-500 hover:bg-red-600 text-white font-bold py-4 rounded-lg">
+                        Send Message
+                    </button>
+
+                </form>
+
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer class="bg-red-700 text-white mt-20">
+
+            <div class="max-w-[1200px] mx-auto px-10 py-10 grid md:grid-cols-3 gap-10">
+
+                <!-- About -->
+                <div>
+                    <h1 class="text-3xl font-bold mb-4">LEAN</h1>
+                    <p class="text-lg">
+                        I design and develop modern websites and digital experiences.
+                        Passionate about creating stylish, responsive, and meaningful
+                        web applications.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h1 class="text-2xl font-bold mb-4">Quick Links</h1>
+                    <ul class="space-y-2 text-lg">
+                        <li><a href="#" class="hover:underline">Home</a></li>
+                        <li><a href="#" class="hover:underline">About Me</a></li>
+                        <li><a href="#" class="hover:underline">Services</a></li>
+                        <li><a href="#" class="hover:underline">Portfolio</a></li>
+                        <li><a href="#" class="hover:underline">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social -->
+                <div>
+                    <h1 class="text-2xl font-bold mb-4">Follow Me</h1>
+
+                    <div class="flex gap-5 text-3xl">
+                        <a href="#" class="hover:text-black transition">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+
+                        <a href="#" class="hover:text-black transition">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#" class="hover:text-black transition">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+
+                        <a href="#" class="hover:text-black transition">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </div>
+
+                    <p class="mt-4 text-lg">
+                        Email: LeancamanaVelasco29@gmail.com
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Bottom -->
+            <div class="bg-red-600 text-center py-4 text-lg">
+                © 2026 Lean Velasco Portfolio | All Rights Reserved
+            </div>
+
+        </footer>
+    </div>
+    <script>
+        const words = ["I'm a Designer", "I'm a Developer."];
+        let i = 0;
+        let j = 0;
+        let currentWord = "";
+        let isDeleting = false;
+
+        function type() {
+            currentWord = words[i];
+            if (isDeleting) {
+                document.getElementById("typewriter").textContent = currentWord.substring(0, j - 1);
+                j--;
+                if (j == 0) {
+                    isDeleting = false;
+                    i++;
+                    if (i == words.length) {
+                        i = 0;
+                    }
+                }
+            } else {
+                document.getElementById("typewriter").textContent = currentWord.substring(0, j + 1);
+                j++;
+                if (j == currentWord.length) {
+                    isDeleting = true;
+                }
+            }
+            setTimeout(type, 100);
+        }
+        type();
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* service card hover */
+        .service-card {
+            transition: 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        /* portfolio hover */
+        .portfolio-img {
+            transition: 0.5s;
+        }
+
+        .portfolio-img:hover {
+            transform: scale(1.1);
+        }
+
+        /* button hover */
+        .btn-hover {
+            transition: 0.3s;
+        }
+
+        .btn-hover:hover {
+            transform: scale(1.05);
+        }
+
+        /* typing cursor */
+        .cursor {
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            0% {
+                opacity: 1
+            }
+
+            50% {
+                opacity: 0
+            }
+
+            100% {
+                opacity: 1
+            }
+        }
+
+        /* progress bar animation */
+        .progress-bar {
+            animation: grow 2s ease;
+        }
+
+        @keyframes grow {
+            0% {
+                width: 0
+            }
+        }
+    </style>
+</body>
+
+</html>
